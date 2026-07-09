@@ -38,6 +38,42 @@ activities = {
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    "Volleyball Team": {
+        "description": "Practice volleyball skills and compete in school matches",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 18,
+        "participants": ["ryan@mergington.edu", "nina@mergington.edu"]
+    },
+    "Track and Field": {
+        "description": "Train for running, jumping, and throwing events",
+        "schedule": "Mondays, Wednesdays, Fridays, 3:00 PM - 4:30 PM",
+        "max_participants": 25,
+        "participants": ["lily@mergington.edu", "mason@mergington.edu"]
+    },
+    "Drama Club": {
+        "description": "Build acting skills and put on school theater productions",
+        "schedule": "Wednesdays and Fridays, 4:00 PM - 6:00 PM",
+        "max_participants": 20,
+        "participants": ["ava@mergington.edu", "liam@mergington.edu"]
+    },
+    "Art Workshop": {
+        "description": "Explore drawing, painting, and mixed media art projects",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 15,
+        "participants": ["zoe@mergington.edu", "noah@mergington.edu"]
+    },
+    "Science Olympiad": {
+        "description": "Prepare for science competitions and solve STEM challenges",
+        "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 16,
+        "participants": ["emma@mergington.edu", "david@mergington.edu"]
+    },
+    "Debate Society": {
+        "description": "Practice public speaking and compete in debate tournaments",
+        "schedule": "Thursdays, 4:30 PM - 6:00 PM",
+        "max_participants": 18,
+        "participants": ["sophia@mergington.edu", "nathan@mergington.edu"]
     }
 }
 
@@ -61,6 +97,9 @@ def signup_for_activity(activity_name: str, email: str):
 
     # Get the specific activity
     activity = activities[activity_name]
+
+# Validate student is not already signed up
+
 
     # Add student
     activity["participants"].append(email)
